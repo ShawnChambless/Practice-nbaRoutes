@@ -135,3 +135,13 @@ html, body {
   width: 150px;
   margin-bottom: 15px;
 }
+
+.inner-container-flex {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.teamWrapper img {
+    width: 100%;
+}

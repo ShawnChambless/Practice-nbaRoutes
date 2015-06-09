@@ -1,3 +1,46 @@
-<div class="inner-container">
+<div class='inner-container-flex' ng-init='getAllData()'>
+    <div class="teamWrapper">
+        <img src='images/jazz-logo.png' />
+    <div class="record">
+        <h1> Utah Jazz <br>Wins: {{jazz.wins}} Losses: {{jazz.losses}} </h1>
+    </div>
+    <div class="team-data">
+    <div class='game' ng-repeat='info in jazz'>
 
+        Date: {{info.createdAt | date}} <br />
+        Utah Jazz -  {{info.homeTeamScore}}<br />
+        {{info.opponent}} - {{info.opponentScore}} </br />
+    </div>
+    </div>
+</div>
+
+<div class="teamWrapper">
+            <img src='images/heat-logo.png' />
+        <div class="record">
+            <h1>Miami Heat <br> Wins: {{heat.wins}} Losses: {{heat.losses}} </h1>
+        </div>
+        <div class="team-data">
+
+        <div class='game' ng-repeat='info in heat'>
+            Date: {{info.createdAt | date}} <br />
+            Miami Heat -  {{info.homeTeamScore}}<br />
+            {{info.opponent}} - {{info.opponentScore}} </br />
+        </div>
+    </div>
+    </div>
+
+    <div class="teamWrapper">
+            <img src='images/lakers-logo.png' />
+        <div class="record">
+            <h1> Los Angeles Lakers <br> Wins: {{lakers.wins}} Losses: {{lakers.losses}} </h1>
+        </div>
+        <div class="team-data">
+
+        <div class='game' ng-repeat='info in lakers'>
+            Date: {{info.createdAt | date}} <br />
+            Utah Jazz -  {{info.homeTeamScore}}<br />
+            {{info.opponent}} - {{info.opponentScore}} </br />
+        </div>
+    </div>
+</div>
 </div>
